@@ -103,7 +103,7 @@ class FeedLogger {
 	var $logging = true;
 	var $sb_dat = null;
 	
-	function FeedLogger(){
+	function __construct(){
 		$this->datadir = dirname(dirname(__FILE__))."/data";
 		
 		if (!is_writable($this->datadir)){
