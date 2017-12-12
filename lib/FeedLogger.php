@@ -124,8 +124,8 @@ class FeedLogger {
 		}
 	}
 	
-	function &singleton(){
-		static $feedlogger = null;
+	static function &singleton(){
+		$feedlogger = null;
 		
 		if ($feedlogger === null){
 			$feedlogger = new FeedLogger;
